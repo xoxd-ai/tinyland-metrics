@@ -1,7 +1,8 @@
 {
   "name": "@tummycrypt/tinyland-metrics",
   "version": "0.2.2",
-  "description": "In-memory metrics collector and SSE event stream manager for web applications",
+  "private": true,
+  "description": "RETIRED: merged into @tummycrypt/tinyland-otel/metrics (tummycrypt_tinyland_otel 1.2.0+)",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -20,7 +21,6 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "clean": "rm -rf dist",
-    "prepublishOnly": "pnpm build && pnpm check:package",
     "test": "vitest run",
     "test:coverage": "vitest --coverage",
     "typecheck": "tsc --noEmit",
@@ -30,7 +30,7 @@
   "license": "Zlib AND LicenseRef-Tinyland-Proprietary",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinyland-inc/tinyland-metrics.git"
+    "url": "git+https://github.com/xoxd-ai/tinyland-metrics.git"
   },
   "dependencies": {},
   "devDependencies": {
@@ -42,13 +42,9 @@
   "engines": {
     "node": ">=22.0.0"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
   "packageManager": "pnpm@10.13.1",
-  "homepage": "https://github.com/tinyland-inc/tinyland-metrics",
+  "homepage": "https://github.com/xoxd-ai/tinyland-otel",
   "bugs": {
-    "url": "https://github.com/tinyland-inc/tinyland-metrics/issues"
+    "url": "https://github.com/xoxd-ai/tinyland-otel/issues"
   }
 }
